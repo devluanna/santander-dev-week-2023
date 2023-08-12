@@ -15,10 +15,10 @@ public class Account {
     private String number;
     private String agency;
 
-    @Column(scale = 13, precision = 2)
+    @Column(precision = 13, scale = 2)
     private BigDecimal balance;
 
-    @Column(name = "additional_limit", scale = 13, precision = 2)
+    @Column(name = "additional_limit", precision = 13, scale = 2)
     private BigDecimal limit;
 
     public Long getId() { return id; }
@@ -36,6 +36,6 @@ public class Account {
     public void setBalance(BigDecimal balance) {this.balance = balance;}
 
     public String getAgency() {return agency; }
-    public void setAgency(String limit) {this.agency = agency;}
+    public void setAgency(String agency) {this.agency = agency;}
 
 }
